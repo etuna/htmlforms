@@ -1,0 +1,195 @@
+<!--
+   hw6q3.html
+   
+   Copyright 2017 Esat Tunahan TUNA <etuna@Tunas-MacBook-Pro.local>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>HW6 Q3</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.30.1" />
+	
+	<style type="text/css">
+	
+	body{
+		background-color:#a5c6b7;
+		
+	}
+	
+	.myPortal{
+		
+		font-size:35px;
+	}
+	
+	.bar{
+		
+		border:1px black solid;
+		width:90%;
+		background-color:#ffffff;
+		padding:2%;
+	}
+	.container {
+		width:50%;
+		background-color:#efefef;
+		}
+	
+	
+	</style>
+	
+	
+</head>
+
+<body>
+	<center>
+	<div class="container">
+	<div class="myPortal">My Personal Portal</div>
+	<div class="operations">
+	<!--Google Search--->
+	<div class="bar"><form method="get" action="http://www.google.com/search" method="get">
+		<table width="500" border="0" cellspacing="3" cellpadding="0">
+			<tbody>
+					<tr>
+					<td><label>Search in Google</label></td>
+					<td><input type="text" name="q" value="search"></td>
+					<td><input type="submit" value="Search"></td>
+					</tr>
+	  </tbody>
+	 </table>
+	</form>
+	</div>
+	
+	<!------------------>
+	
+	<!--Yandex Search--->
+	<div class="bar"><form method="get" action="https://yandex.com/search" method="get">
+		<table width="500" border="0" cellspacing="3" cellpadding="0">
+			<tbody>
+					<tr>
+					<td><label>Search in Yandex</label></td>
+					<td><input type="text" name="text" value="search"></td>
+					<td><input type="submit" value="Search"></td>
+					</tr>
+	  </tbody>
+	 </table>
+	</form>
+	</div>
+	
+	
+	<!------------------>
+	
+	
+	
+	<!--Bing Search--->
+	<div class="bar"><form method="get" action="https://bing.com/search" method="get">
+		<table width="500" border="0" cellspacing="3" cellpadding="0">
+			<tbody>
+					<tr>
+					<td><label>Search in Bing</label></td>
+					<td><input type="text" name="q" value="search"></td>
+					<td><input type="submit" value="Search"></td>
+					</tr>
+	  </tbody>
+	 </table>
+	</form>
+	</div>
+	
+	
+	<!------------------>
+	
+	<!--Log in to kusis--->
+	<div class="bar"><form action="https://kusis.ku.edu.tr/psp/ps/?cmd=login&languageCd=ENG&" method="post" name="login">
+		<table width="500" border="0" cellspacing="3" cellpadding="0">
+			<tbody>
+					<tr>
+					<td><label>KUSIS Log In</label></td>
+					<td><input id="login__username" type="text" name="userid" value="username"></td>
+					<td><input id="login__password" type="password" name="pwd" value="password"></td>
+					<td><input type="submit" name="Submit" value="Sign In"></td>
+					</tr>
+	  </tbody>
+	 </table>
+	</form>
+	</div>
+	
+	
+	<!------------------>
+	
+
+	
+	
+	
+	<!--Weather--->
+	<div class="bar"><form method="get" action="https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx" method="get">
+		<table width="500" border="0" cellspacing="3" cellpadding="0">
+			<tbody>
+					<tr>
+					<td><label>Weather Conditions</label></td>
+					<td><select name="il">
+					<option value="Istanbul">Istanbul</option>
+					<option value="Ankara">Ankara</option>
+					<option value="Izmir">Izmir</option>
+					<option value="Bursa">Bursa</option>
+					<option value="Adana">Adana</option>
+					</select></td>
+					<td><input type="submit" value="Submit"></td>
+					</tr>
+	  </tbody>
+	 </table>
+	</form>
+	</div>
+	
+	
+	<!------------------>
+	
+	
+	
+		<!--Local Times--->
+	<div class="bar"><form method="get" action="http://www.saatkac.com/sehirler.php" method="get">
+		<table width="500" border="0" cellspacing="3" cellpadding="0">
+			<tbody>
+					<tr>
+					<td><label>Learn Local Times</label></td>
+					<td><select name="keyword">
+					<option value="Istanbul">Istanbul</option>
+					<option value="Ankara">Ankara</option>
+					<option value="Izmir">Izmir</option>
+					<option value="Bursa">Bursa</option>
+					<option value="Adana">Adana</option>
+					</select></td>
+					<td><input type="submit" value="Submit"></td>
+					</tr>
+	  </tbody>
+	 </table>
+	</form>
+	</div>
+	
+	
+	<!------------------>
+	<br>
+	</div>
+	</div>
+	</center>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!--
+   hw6q4.shtml
+   
+   Copyright 2017 Esat Tunahan TUNA <etuna@Tunas-MacBook-Pro.local>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>HW6 Q4</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.30.1" />
+	<style type="text/css">
+
+	.container{
+		
+		width:60%;
+		height:300px;
+		border:1px solid black;
+		margin:auto;
+		
+	}
+	._date{
+		
+		background-color:#efefef;
+		font-size:25px;
+		width:100%;
+		height:100px;
+	}
+	._sizeOf{
+		
+		background-color:#000000;
+		color:#ffffff;
+		font-size:25px;
+		width:100%;
+		height:50px;
+		
+	}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+	<!--#include file="header.html"-->
+	<br><br>
+	<div class="_date">Local Date:
+	<!--#echo var="DATE_LOCAL"--> <br>
+	Date according to GMT:
+	<!--#echo var="DATE_GMT"--><br><br>
+	</div>
+	<div class="_sizeOf">
+	Size of the header file included :
+	<!--#fsize file="header.html"-->
+	</div>
+	</div>
+	
+	
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!--
+   hw6q1.html
+   
+   Copyright 2017 Esat Tunahan TUNA <etuna@Tunas-MacBook-Pro.local>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>HW6 Q2</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.30.1" />
+	<style type="text/css">
+	body{
+	background-color:#eEeEeE;
+	color:#000000;
+	
+	}
+	.form_container{
+		background-color:#ffffff;
+		margin:auto;
+		width:60%;
+		border:1px solid black;
+	}
+	
+	.output_table{
+		background-color:#e2e2e2;
+		width:60%;
+	}
+	</style>
+</head>
+
+<body>
+	
+	<!---FORM     ----------------------------------------->
+	<center>
+	   <div class="form_container">
+		 <form action="" method="post">
+			<table width="500" border="0" cellspacing="3" cellpadding="0">
+					<tbody>
+						<tr><br><p><strong>Please fill out this form<br>NOTE!!!!!!<br>action="thispage"</strong></p></tr>
+						<tr><br><br></tr>
+	  <!-------------------------------------------->
+						<tr>
+						<td><label for="name_surname">Name and Surname :</label></td>
+						<td><input name="name_surname" type="text" id="name" value="Enter a Name" size="30"></td>
+						</tr>
+      <!-------------------------------------------->
+						<tr>
+						<td><label for="username">Username :</label></td>
+						<td><input name="username" type="text" id="username" value="Enter a Username" size="30"></td>
+						</tr>
+	  <!-------------------------------------------->					
+					   <tr>
+					   <td><label for="password">Password :</label></td>
+					   <td><input type="password" name="password" id="password"></td>
+					   </tr>
+	  <!-------------------------------------------->				   
+					   <tr>
+					  <td><label for="passwordAgain">Confirm Password :</label></td>
+					  <td><input type="password" name="passwordAgain" id="passwordAgain"></td>
+					  </tr>
+	  <!-------------------------------------------->				  
+					  <tr>
+					   <td>Graduation</td>
+					   <td><p>
+						<label>
+						  <input type="radio" name="grad" value="graduate" id="grad">Graduate</label>
+						<label>
+						  <input type="radio" name="grad" value="undergraduate" id="ugrad">
+						  Undergraduate</label>
+						<br>
+					   </p></td>
+					  </tr>
+	   <!-------------------------------------------->
+							<tr>
+							 <td>Major</td>
+							 <td><table width="300" border="0" cellspacing="0" cellpadding="0">
+							  <tbody>
+								<tr>
+									  <td><label>
+									  <input type="checkbox" name="major" value="Computer Engineering">
+										Computer Engineering</label>
+										<br>
+										<label>
+										<input type="checkbox" name="major" value="Media and Visual Arts">
+										Media and Visual Arts</label>
+									  </td>
+						  
+									  <td><label>
+										  <input type="checkbox" name="major" value="Law">
+										  Law</label>
+										<br>
+										<label>
+										  <input type="checkbox" name="major" value="Other Major">
+										  Other</label>
+									   </td>
+								</tr>
+							  </tbody>
+							 </table>
+							</td>
+							</tr>
+							<tr><td><br></td></tr>
+	   <!-------------------------------------------->					
+							
+							
+						<tr>
+						  <td><label for="uni">University</label></td>
+						  <td><select name="uni" id="uni">
+							<option value="Koc University">Koç University</option>
+							<option value="Bilkent University">Bilkent University</option>
+							<option value="Sabanci University">Sabanci University</option>
+							<option value="Other">Other</option>
+						  </select></td>
+						</tr>
+	  <!-------------------------------------------->									
+							<tr><td><br></td></tr>
+						  <tr>
+						  <td><label for="country">Country</label></td>
+						  <td><select name="country">
+							<option value="USA">USA</option>
+							<option value="UK">UK</option>
+							<option value="Turkey">Turkey</option>
+							<option value="Other">Other</option>
+						  </select></td>
+						  </tr>
+     <!-------------------------------------------->
+						<tr><td><br><br></td></tr>
+						<tr>
+						  <td><input name="lang" type="hidden" id="lang" value="en"></td>
+						  <td><input type="submit" name="submit" id="submit" value="Submit">
+							<input type="reset" name="reset" id="reset" value="Reset"></td>
+						</tr>
+      <!-------------------------------------------->
+						<tr>
+						  <td><input name="author" type="hidden" value="etuna"></td>
+						  <td><br><br><br><br></td>
+						</tr>
+    
+     <!-------------------------------------------->
+					<tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+ 					</tr>
+ 	<!-------------------------------------------->		   
+			  </tbody>
+			</table>
+		   </form>
+		</div>
+	<!- END OF THE FORM------------------------------------------->
+	
+	
+	
+	
+	<!--OUTPUT TABLE--------------------------------------->
+	<div class="output_table">
+			<?php
+	   echo "<strong>Your name : </strong>";
+	   echo $_POST["name_surname"]; 
+	   echo "<strong><br>Your username :</strong>";
+	   echo $_POST["username"];
+	   echo "<strong><br>Your password :</strong>"; 
+	   echo $_POST["password"];
+	   echo "<strong><br>Your password(confirmed) :</strong>"; 
+	   echo $_POST["passwordAgain"];
+	   echo "<strong><br>Your graduation status :</strong>";
+	   echo $_POST["grad"];
+	   echo "<strong><br>Your major :</strong>";
+	   echo $_POST["major"];
+	   echo "<strong><br>Your university :</strong>";
+	   echo $_POST["uni"];
+	   echo "<strong><br>Your country :</strong>";
+	   echo $_POST["country"];
+	   ?>
+	<!--OUTPUT TABLE ENDS HERE----------------------------->
+	
+	
+	</div>	
+</center>
+</body>
+
+</html>
